@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.uniapp.FirstFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_undergraduateFragment"
+            app:destination="@id/undergraduateFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_postgraduateFragment"
+            app:destination="@id/postgraduateFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_applicationFragment"
+            app:destination="@id/applicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/undergraduateFragment"
+        android:name="com.example.uniapp.UndergraduateFragment"
+        android:label="Undergraduate"
+        tools:layout="@layout/fragment_undergraduate" />
+    <fragment
+        android:id="@+id/postgraduateFragment"
+        android:name="com.example.uniapp.PostgraduateFragment"
+        android:label="Postgraduate"
+        tools:layout="@layout/fragment_postgraduate" />
+    <fragment
+        android:id="@+id/applicationFragment"
+        android:name="com.example.uniapp.ApplicationFragment"
+        android:label="How to Apply"
+        tools:layout="@layout/fragment_application" />
+</navigation>

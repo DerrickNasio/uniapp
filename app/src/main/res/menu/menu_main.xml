@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.uniapp.MainActivity">
+    <item
+        android:id="@+id/item_dashboard"
+        android:orderInCategory="100"
+        android:title="Your Dashboard"
+        app:showAsAction="never" />
+</menu>

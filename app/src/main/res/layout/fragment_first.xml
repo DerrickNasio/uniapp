@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We look forward to helping you forward your education here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:src="@drawable/graduand" />
+
+        <TextView
+            android:id="@+id/textview_programmes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a look at our programmes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_first_to_undergraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Undergraduate Programmes" />
+
+            <Button
+                android:id="@+id/button_first_to_postgraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postgraduate Programmes" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start your application process"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_first_to_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to Apply" />
+
+    </LinearLayout>
+</ScrollView>
