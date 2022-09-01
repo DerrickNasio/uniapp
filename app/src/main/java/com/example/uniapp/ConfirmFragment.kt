@@ -13,7 +13,6 @@ import com.example.uniapp.databinding.FragmentConfirmBinding
  * A simple [Fragment] subclass.
  */
 class ConfirmFragment(student: Student) : Fragment() {
-    private var _student = student
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +23,7 @@ class ConfirmFragment(student: Student) : Fragment() {
             FragmentConfirmBinding.inflate(inflater, container, false)
         val contentScrollingBinding = ContentScrollingBinding.bind(fragmentConfirmBinding.root)
 
-        // Display student details in ContentScrolling
+        /*// Display student details in ContentScrolling
         with(contentScrollingBinding) {
             viewTextSurname.text = _student.surname
             viewTextOtherNames.text = _student.otherNames
@@ -34,7 +33,7 @@ class ConfirmFragment(student: Student) : Fragment() {
             viewPhoneNumber.text = _student.phoneNumber
             viewIdNumber.text = _student.identityNumber
             viewTextNationality.text = _student.country
-        }
+        }*/
 
         fragmentConfirmBinding.buttonEdit.setOnClickListener {
             findNavController().navigate(R.id.action_confirmFragment_to_registerFragment)

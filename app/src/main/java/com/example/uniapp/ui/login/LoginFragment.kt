@@ -119,7 +119,7 @@ class LoginFragment : Fragment() {
         val appContext = context?.applicationContext ?: return
         Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
 
-        findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
+        findNavController().navigate(R.id.action_loginFragment_to_programmesFragment)
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {

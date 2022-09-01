@@ -47,7 +47,7 @@
 
         <include
             android:id="@+id/include"
-            layout="@layout/content_scrolling"
+            layout="@layout/content_display"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

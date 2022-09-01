@@ -42,7 +42,12 @@
         android:label="Sign In or Register"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            android:id="@+id/action_loginFragment_to_programmesFragment"
+            app:destination="@id/programmesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/programmesFragment"
+        android:name="com.example.uniapp.ProgrammesFragment"
+        android:label="fragment_programmes"
+        tools:layout="@layout/fragment_programmes" />
 </navigation>

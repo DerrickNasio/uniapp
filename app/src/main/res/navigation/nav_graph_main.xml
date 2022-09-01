@@ -2,22 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.uniapp.FirstFragment"
+        android:id="@+id/mainFragment"
+        android:name="com.example.uniapp.MainFragment"
         android:label="Welcome"
-        tools:layout="@layout/fragment_first">
-
+        tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_FirstFragment_to_undergraduateFragment"
+            android:id="@+id/action_mainFragment_to_undergraduateFragment"
             app:destination="@id/undergraduateFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_postgraduateFragment"
+            android:id="@+id/action_mainFragment_to_postgraduateFragment"
             app:destination="@id/postgraduateFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_applicationFragment"
+            android:id="@+id/action_mainFragment_to_applicationFragment"
             app:destination="@id/applicationFragment" />
     </fragment>
     <fragment
