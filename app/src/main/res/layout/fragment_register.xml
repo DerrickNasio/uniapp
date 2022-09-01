@@ -101,40 +101,6 @@
                     android:hint="Phone Number"
                     android:inputType="phone" />
 
-                <RadioGroup
-                    android:id="@+id/radioGroupIdentity"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Identity Document"
-                        android:textSize="18sp" />
-
-
-                    <RadioButton
-                        android:id="@+id/radioID"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="National ID" />
-
-                    <RadioButton
-                        android:id="@+id/radioBirthCertificate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Birth Certificate" />
-                </RadioGroup>
-
-                <EditText
-                    android:id="@+id/editIdNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="ID or Birth Certificate No."
-                    android:inputType="textPersonName" />
-
             </LinearLayout>
 
 
@@ -160,32 +126,16 @@
                     android:id="@+id/textViewEducation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Education Details" />
+                    android:text="Application Details" />
 
-                <RadioGroup
+                <EditText
+                    android:id="@+id/editAppliedCourse"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textViewCourse"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Course applied for"
-                        android:textSize="18sp" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Undergraduate" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Postgraduate" />
-
-                </RadioGroup>
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Course applied for"
+                    android:inputType="text"
+                    android:text="BACHELOR OF ARCHITECTURAL STUDIES / BACHELOR OF ARCHITECTURE" />
 
             </LinearLayout>
 
@@ -226,8 +176,46 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
+                <EditText
+                    android:id="@+id/editIdNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ID or Birth Certificate No."
+                    android:inputType="text" />
             </LinearLayout>
 
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/qualificationsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nationalityCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/qualificationsCard_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Qualifications" />
+
+                <Button
+                    android:id="@+id/button_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Your Documents" />
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -242,6 +230,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nationalityCard" />
+            app:layout_constraintTop_toBottomOf="@id/qualificationsCard" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

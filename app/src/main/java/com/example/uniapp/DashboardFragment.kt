@@ -37,6 +37,10 @@ class DashboardFragment : Fragment() {
         binding.buttonDashboardToEdit.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_registerFragment)
         }
+
+        binding.buttonDashboardToCourse.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_programmesFragment)
+        }
     }
 
     override fun onDestroyView() {

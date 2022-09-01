@@ -7,7 +7,6 @@ data class Student(
     val dateOfBirth: String,
     val emailAddress: String,
     val phoneNumber: String,
-    val identityDocument: String,
     val identityNumber: String,
     val country: String
 )

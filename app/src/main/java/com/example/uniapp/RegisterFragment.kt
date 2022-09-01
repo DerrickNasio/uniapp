@@ -1,6 +1,7 @@
 package com.example.uniapp
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -57,6 +58,11 @@ class RegisterFragment : Fragment() {
             prompt = "Select your country of citizenship"
             gravity = android.view.Gravity.CENTER
         }
+
+        binding.buttonPick.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "file/*"
+            startActivityForResult(intent, 1) }
 
         binding.buttonRegisterToConfirm.setOnClickListener {
             val student1 = obtainStudentData()
@@ -120,13 +126,6 @@ class RegisterFragment : Fragment() {
         val emailAddress = editEmailAddress.text.toString()
         val phoneNumber = editPhoneNumber.text.toString()
 
-        // Identification document input
-        val radioGroupIdentity: RadioGroup = binding.radioGroupIdentity
-        val identityDocument: String = when (radioGroupIdentity.checkedRadioButtonId) {
-            R.id.radioID -> "National ID"
-            R.id.radioBirthCertificate -> "Birth Certificate"
-            else -> ""
-        }
         val identityNumber = editIdNumber.text.toString()
 
         // Select nationality
@@ -156,7 +155,6 @@ class RegisterFragment : Fragment() {
             binding.editDateOfBirth.text.toString(),
             emailAddress,
             phoneNumber,
-            identityDocument,
             identityNumber,
             spinnerCountries.selectedItem.toString()
         )
