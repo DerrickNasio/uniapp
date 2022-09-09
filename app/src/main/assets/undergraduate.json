@@ -1,251 +1,251 @@
 {
-  "programmes": [
+  "courses": [
     {
-      "programmeName": "B.SC. ACTUARIAL SCIENCE",
+      "courseName": "B.SC. ACTUARIAL SCIENCE",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF ARCHITECTURAL STUDIES / BACHELOR OF ARCHITECTURE",
+      "courseName": "BACHELOR OF ARCHITECTURAL STUDIES / BACHELOR OF ARCHITECTURE",
       "faculty": "FACULTY OF BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "B.SC. FOOD SCIENCE & TECHNOLOGY",
+      "courseName": "B.SC. FOOD SCIENCE & TECHNOLOGY",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "BACHELOR OF ARTS IN INTERNATIONAL STUDIES",
+      "courseName": "BACHELOR OF ARTS IN INTERNATIONAL STUDIES",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.A. JOURNALISM & MEDIA STUDIES",
+      "courseName": "B.A. JOURNALISM & MEDIA STUDIES",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF EDUCATION (ARTS)",
+      "courseName": "BACHELOR OF EDUCATION (ARTS)",
       "faculty": "FACULTY OF EDUCATION"
     },
     {
-      "programmeName": "B.SC. MANAGEMENT OF AGROECOSYSTEMS & ENVIRONMENT",
+      "courseName": "B.SC. MANAGEMENT OF AGROECOSYSTEMS & ENVIRONMENT",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "B.SC. MECHANICAL ENGINEERING",
+      "courseName": "B.SC. MECHANICAL ENGINEERING",
       "faculty": "FACULTY OF ENGINEERING"
     },
     {
-      "programmeName": "B.SC. CHEMISTRY",
+      "courseName": "B.SC. CHEMISTRY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF PHARMACY",
+      "courseName": "BACHELOR OF PHARMACY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF LAW",
+      "courseName": "BACHELOR OF LAW",
       "faculty": "FACULTY OF LAW"
     },
     {
-      "programmeName": "B.SC. BIOSYSTEMS ENGINEERING",
+      "courseName": "B.SC. BIOSYSTEMS ENGINEERING",
       "faculty": "FACULTY OF ENGINEERING"
     },
     {
-      "programmeName": "B.SC. COMPUTER SCIENCE",
+      "courseName": "B.SC. COMPUTER SCIENCE",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF DENTAL SURGERY",
+      "courseName": "BACHELOR OF DENTAL SURGERY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "BACHELOR IN INTERIOR DESIGN",
+      "courseName": "BACHELOR IN INTERIOR DESIGN",
       "faculty": "FACULTY BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "B.SC. FOOD SCIENCE, NUTRITION & DIETETICS",
+      "courseName": "B.SC. FOOD SCIENCE, NUTRITION & DIETETICS",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "BACHELOR OF EDUCATION (SCIENCE)",
+      "courseName": "BACHELOR OF EDUCATION (SCIENCE)",
       "faculty": "FACULTY OF EDUCATION"
     },
     {
-      "programmeName": "BSC. DRY LAND ECONOMICS AND AGRISYSTEM MANAGEMENT",
+      "courseName": "BSC. DRY LAND ECONOMICS AND AGRISYSTEM MANAGEMENT",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "B.A. ANTHROPOLOGY",
+      "courseName": "B.A. ANTHROPOLOGY",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.SC. GEOLOGY",
+      "courseName": "B.SC. GEOLOGY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF COMMERCE",
+      "courseName": "BACHELOR OF COMMERCE",
       "faculty": "FACULTY OF BUSINESS AND MANAGEMENT SCIENCE"
     },
     {
-      "programmeName": "B.SC. AGRICULTURE",
+      "courseName": "B.SC. AGRICULTURE",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "B.SC. CIVIL ENGINEERING",
+      "courseName": "B.SC. CIVIL ENGINEERING",
       "faculty": "FACULTY OF ENGINEERING"
     },
     {
-      "programmeName": "B.SC. MATHEMATICS",
+      "courseName": "B.SC. MATHEMATICS",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. MEDICAL LABORATORY SCIENCE AND TECHNOLOGY",
+      "courseName": "B.SC. MEDICAL LABORATORY SCIENCE AND TECHNOLOGY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF CONSTRUCTION MANAGEMENT",
+      "courseName": "BACHELOR OF CONSTRUCTION MANAGEMENT",
       "faculty": "FACULTY OF BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "BACHELOR OF VETERINARY MEDICINE",
+      "courseName": "BACHELOR OF VETERINARY MEDICINE",
       "faculty": "FACULTY OF VETERINARY MEDICINE"
     },
     {
-      "programmeName": "B.SC. BIOLOGY",
+      "courseName": "B.SC. BIOLOGY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)",
+      "courseName": "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)",
       "faculty": "FACULTY OF EDUCATION"
     },
     {
-      "programmeName": "BACHELOR OF SCIENCE (HORTICULTURE)",
+      "courseName": "BACHELOR OF SCIENCE (HORTICULTURE)",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "BACHELOR OF ARTS  (GENDER AND DEVELOPMENT STUDIES)",
+      "courseName": "BACHELOR OF ARTS  (GENDER AND DEVELOPMENT STUDIES)",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.SC. METEOROLOGY",
+      "courseName": "B.SC. METEOROLOGY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. FINANCE",
+      "courseName": "B.SC. FINANCE",
       "faculty": "FACULTY OF BUSINESS AND MANAGEMENT SCIENCE"
     },
     {
-      "programmeName": "B.SC. STATISTICS",
+      "courseName": "B.SC. STATISTICS",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. MEDICAL PHYSIOLOGY",
+      "courseName": "B.SC. MEDICAL PHYSIOLOGY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF REAL ESTATE",
+      "courseName": "BACHELOR OF REAL ESTATE",
       "faculty": "FACULTY OF BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "B.SC. LEATHER SCIENCE AND TECHNOLOGY",
+      "courseName": "B.SC. LEATHER SCIENCE AND TECHNOLOGY",
       "faculty": "FACULTY OF VETERINARY MEDICINE"
     },
     {
-      "programmeName": "B.SC. MICROBIOLOGY AND BIOTECHNOLOGY",
+      "courseName": "B.SC. MICROBIOLOGY AND BIOTECHNOLOGY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF EDUCATION (ICT)",
+      "courseName": "BACHELOR OF EDUCATION (ICT)",
       "faculty": "FACULTY OF EDUCATION"
     },
     {
-      "programmeName": "BACHELOR OF  ECONOMICS",
+      "courseName": "BACHELOR OF  ECONOMICS",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.SC. MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION",
+      "courseName": "B.SC. MICROPROCESSOR TECHNOLOGY & INSTRUMENTATION",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF PROJECT PLANNING AND MANAGEMENT",
+      "courseName": "BACHELOR OF PROJECT PLANNING AND MANAGEMENT",
       "faculty": "FACULTY OF BUSINESS AND MANAGEMENT SCIENCE"
     },
     {
-      "programmeName": "B.SC. AGRICULTURE, EDUCATION AND EXTENSION",
+      "courseName": "B.SC. AGRICULTURE, EDUCATION AND EXTENSION",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "B.SC. PETROLEUM ENGINEERING",
+      "courseName": "B.SC. PETROLEUM ENGINEERING",
       "faculty": "FACULTY OF ENGINEERING"
     },
     {
-      "programmeName": "B.SC. INDUSTRIAL CHEMISTRY",
+      "courseName": "B.SC. INDUSTRIAL CHEMISTRY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. ANATOMY",
+      "courseName": "B.SC. ANATOMY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF QUANTITY SURVEYING",
+      "courseName": "BACHELOR OF QUANTITY SURVEYING",
       "faculty": "FACULTY OF BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "B.SC. FISHERIES AND AQUACULTURE MANAGEMENT",
+      "courseName": "B.SC. FISHERIES AND AQUACULTURE MANAGEMENT",
       "faculty": "FACULTY OF VETERINARY MEDICINE"
     },
     {
-      "programmeName": "B.SC. ENVIRONMENTAL CONSERVATION & NATURAL RESOURCE MANAGEMENT",
+      "courseName": "B.SC. ENVIRONMENTAL CONSERVATION & NATURAL RESOURCE MANAGEMENT",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. IN ASTRONOMY AND ASTROPHYSICS",
+      "courseName": "B.SC. IN ASTRONOMY AND ASTROPHYSICS",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.A. DESIGN",
+      "courseName": "B.A. DESIGN",
       "faculty": "FACULTY BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "BACHELOR OF INFORMATION SCIENCE",
+      "courseName": "BACHELOR OF INFORMATION SCIENCE",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "BACHELOR OF ECONOMICS & STATISTICS",
+      "courseName": "BACHELOR OF ECONOMICS & STATISTICS",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.A. BROADCAST PRODUCTION",
+      "courseName": "B.A. BROADCAST PRODUCTION",
       "faculty": "FACULTY OF ARTS AND SOCIAL SCIENCES"
     },
     {
-      "programmeName": "B.SC. RANGE MANAGEMENT",
+      "courseName": "B.SC. RANGE MANAGEMENT",
       "faculty": "FACULTY OF AGRICULTURE"
     },
     {
-      "programmeName": "B.SC. ELECTRICAL ENGINEERING",
+      "courseName": "B.SC. ELECTRICAL ENGINEERING",
       "faculty": "FACULTY OF ENGINEERING"
     },
     {
-      "programmeName": "B.SC. ANALYTICAL CHEMISTRY",
+      "courseName": "B.SC. ANALYTICAL CHEMISTRY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "B.SC. NURSING",
+      "courseName": "B.SC. NURSING",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     },
     {
-      "programmeName": "B.A. PLANNING",
+      "courseName": "B.A. PLANNING",
       "faculty": "FACULTY OF BUILT ENVIRONMENT AND DESIGN"
     },
     {
-      "programmeName": "BACHELOR OF SCIENCE IN WILDLIFE MANAGEMENT AND CONSERVATION",
+      "courseName": "BACHELOR OF SCIENCE IN WILDLIFE MANAGEMENT AND CONSERVATION",
       "faculty": "FACULTY OF VETERINARY MEDICINE"
     },
     {
-      "programmeName": "B.SC. BIOCHEMISTRY",
+      "courseName": "B.SC. BIOCHEMISTRY",
       "faculty": "FACULTY OF SCIENCE AND TECHNOLOGY"
     },
     {
-      "programmeName": "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY",
+      "courseName": "BACHELOR OF MEDICINE AND BACHELOR OF SURGERY",
       "faculty": "FACULTY OF HEALTH SCIENCES"
     }
   ]

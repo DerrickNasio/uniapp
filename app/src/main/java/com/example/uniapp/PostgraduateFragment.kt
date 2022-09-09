@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.uniapp.databinding.FragmentPostgraduateBinding
 import java.io.IOException
 import java.io.InputStream
@@ -43,6 +44,11 @@ class PostgraduateFragment : Fragment() {
 
         val output = binding.textviewPostgraduate
         output.text = content
+
+        // An onClickListener for the button
+        binding.buttonPostgraduateCourses.setOnClickListener {
+            findNavController().navigate(R.id.action_postgraduateFragment_view_courses)
+        }
     }
 
     override fun onDestroyView() {

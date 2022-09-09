@@ -23,15 +23,31 @@
         android:id="@+id/undergraduateFragment"
         android:name="com.example.uniapp.UndergraduateFragment"
         android:label="Undergraduate"
-        tools:layout="@layout/fragment_undergraduate" />
+        tools:layout="@layout/fragment_undergraduate" >
+        <action
+            android:id="@+id/action_undergraduateFragment_view_courses"
+            app:destination="@id/undergraduateCourseFragment" />
+    </fragment>
     <fragment
         android:id="@+id/postgraduateFragment"
         android:name="com.example.uniapp.PostgraduateFragment"
         android:label="Postgraduate"
-        tools:layout="@layout/fragment_postgraduate" />
+        tools:layout="@layout/fragment_postgraduate" >
+        <action
+            android:id="@+id/action_postgraduateFragment_view_courses"
+            app:destination="@id/postgraduateCourseFragment" />
+    </fragment>
     <fragment
         android:id="@+id/applicationFragment"
         android:name="com.example.uniapp.ApplicationFragment"
         android:label="How to Apply"
         tools:layout="@layout/fragment_application" />
+    <fragment
+        android:id="@+id/undergraduateCourseFragment"
+        android:name="com.example.uniapp.UndergraduateCourseFragment"
+        android:label="UndergraduateCourseFragment" />
+    <fragment
+        android:id="@+id/postgraduateCourseFragment"
+        android:name="com.example.uniapp.PostgraduateCourseFragment"
+        android:label="PostgraduateCourseFragment" />
 </navigation>

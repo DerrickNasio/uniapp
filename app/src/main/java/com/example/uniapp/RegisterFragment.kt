@@ -1,19 +1,16 @@
 package com.example.uniapp
 
-import android.app.DatePickerDialog
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.uniapp.databinding.FragmentRegisterBinding
-import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter.ISO_LOCAL_DATE
-import java.util.*
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.getValue
 
 
 /**
@@ -26,30 +23,25 @@ class RegisterFragment : Fragment() {
     // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
-    // Array of nationalities
-    private val countriesArray =
-        arrayOf("Kenya", "Uganda", "Tanzania", "Rwanda", "Burundi", "South Sudan")
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
-        return binding.root
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        // display selected course
+        val bundle = intent.extras
+        binding.editAppliedCourse.setText(bundle?.getString("courseName"))
+        binding.editFaculty.setText(bundle?.getString("faculty"))
 
-        // Access the Nationalities spinner
+        // Create an ArrayAdapter for the nationality spinner using the string array and a default spinner layout
         val spinnerCountries: Spinner = binding.spinnerCountries
-
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        val aa =
-            activity?.let { ArrayAdapter(it, android.R.layout.simple_spinner_item, countriesArray) }
+        val countriesArray =
+            arrayOf("Kenya", "Uganda", "Tanzania", "Rwanda", "Burundi", "South Sudan")
+        val appContext = context?.applicationContext!!
+        val aa = ArrayAdapter(appContext, android.R.layout.simple_spinner_item, countriesArray)
         // Specify the layout to use when the list of choices appears
-        aa!!.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         with(spinnerCountries)
         {
             // Apply the adapter to the spinner
@@ -59,76 +51,29 @@ class RegisterFragment : Fragment() {
             gravity = android.view.Gravity.CENTER
         }
 
-        binding.buttonPick.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "file/*"
-            startActivityForResult(intent, 1) }
-
-        binding.buttonRegisterToConfirm.setOnClickListener {
-            val student1 = obtainStudentData()
-            ConfirmFragment(student1)
-        }
+        return binding.root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-    private fun obtainStudentData(): Student {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         // creating variables for values in EditTexts
         val editTextSurname: EditText = binding.editTextSurname
         val editTextOtherNames: EditText = binding.editTextOtherNames
+        val editDateOfBirth: EditText = binding.editDateOfBirth
         val editEmailAddress: EditText = binding.editEmailAddress
         val editPhoneNumber: EditText = binding.editPhoneNumber
         val editIdNumber: EditText = binding.editIdNumber
 
-        val radioGroupGender: RadioGroup = binding.radioGroupGender
-        // Getting the checked radio button id from the radio group
-        val gender: String = when (radioGroupGender.checkedRadioButtonId) {
-            R.id.radioMale -> "Male"
-            R.id.radioFemale -> "Female"
-            else -> ""
-        }
+        // obtaining EditText inputs
+        val textSurname = editTextSurname.text.toString()
+        val textOtherNames = editTextOtherNames.text.toString()
+        val textDateOfBirth = editDateOfBirth.text.toString()
+        val textEmailAddress = editEmailAddress.text.toString()
+        val textPhoneNumber = editPhoneNumber.text.toString()
+        val textIdentityNumber = editIdNumber.text.toString()
 
-        val surname = editTextSurname.text.toString()
-        val otherNames = editTextOtherNames.text.toString()
-
-        val cal = Calendar.getInstance()
-        // when you click on the EditText,
-        // show DatePickerDialog that is set with OnDateSetListener
-        binding.editDateOfBirth.setOnClickListener {
-            val datePickerDialog =
-                activity?.let { it1 ->
-                    DatePickerDialog(
-                        it1,
-                        // create an OnDateSetListener
-                        { _, year, monthOfYear, dayOfMonth ->
-                            (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                                val dateOfBirth = LocalDate.of(year, monthOfYear, dayOfMonth)
-                                dateOfBirth.format(ISO_LOCAL_DATE)
-                            } else {
-                                val dateOfBirth = Date(year, monthOfYear, dayOfMonth)
-                                val pattern = "yyyy-MM-dd" // mention the format you need
-                                val simpleDateFormat = SimpleDateFormat(pattern)
-                                simpleDateFormat.format(dateOfBirth)
-                            }).apply { binding.editDateOfBirth.setText(this) }
-                        },
-                        cal.get(Calendar.YEAR),
-                        cal.get(Calendar.MONTH),
-                        cal.get(Calendar.DAY_OF_MONTH)
-                    )
-                }
-            datePickerDialog!!.show()
-        }
-
-        val emailAddress = editEmailAddress.text.toString()
-        val phoneNumber = editPhoneNumber.text.toString()
-
-        val identityNumber = editIdNumber.text.toString()
-
-        // Select nationality
+        // set onItemSelectedListener to nationality spinner
         val spinnerCountries: Spinner = binding.spinnerCountries
         spinnerCountries.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -146,17 +91,44 @@ class RegisterFragment : Fragment() {
             }
         }
 
-        // calling method to add
-        // name to our database
-        return Student(
-            surname,
-            otherNames,
-            gender,
-            binding.editDateOfBirth.text.toString(),
-            emailAddress,
-            phoneNumber,
-            identityNumber,
-            spinnerCountries.selectedItem.toString()
-        )
+        // obtaining input from Gender radio group
+        val radioGroupGender: RadioGroup = binding.radioGroupGender
+        val textGender: String = when (radioGroupGender.checkedRadioButtonId) {
+            R.id.radioMale -> "Male"
+            R.id.radioFemale -> "Female"
+            else -> ""
+        }
+
+        binding.buttonRegisterToConfirm.setOnClickListener {
+
+            // Write a message to the database
+            val databaseReference = FirebaseDatabase.getInstance().getReference("students")
+
+            val student = Student(
+                textSurname,
+                textOtherNames,
+                textGender,
+                textDateOfBirth,
+                textEmailAddress,
+                textPhoneNumber,
+                textIdentityNumber,
+                spinnerCountries.selectedItem.toString()
+            )
+            databaseReference.child("emailAddress").child(textEmailAddress).setValue(student)
+
+            findNavController().navigate(R.id.action_registerFragment_to_dashboardFragment)
+        }
+
+        binding.buttonPick.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "file/*"
+            startActivityForResult(intent, 1)
+        }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }

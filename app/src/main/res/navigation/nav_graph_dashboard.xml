@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_dashboard"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/registerFragment">
 
     <fragment
         android:id="@+id/dashboardFragment"
@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_dashboardFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_dashboardFragment_to_programmesFragment"
-            app:destination="@id/programmesFragment" />
     </fragment>
 
     <fragment
@@ -24,33 +21,7 @@
         android:label="Register"
         tools:layout="@layout/fragment_register">
         <action
-            android:id="@+id/action_registerFragment_to_confirmFragment"
-            app:destination="@id/confirmFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/confirmFragment"
-        android:name="com.example.uniapp.ConfirmFragment"
-        android:label="Confirm"
-        tools:layout="@layout/fragment_confirm">
-        <action
-            android:id="@+id/action_confirmFragment_to_registerFragment"
-            app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_confirmFragment_to_dashboardFragment"
+            android:id="@+id/action_registerFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.uniapp.ui.login.LoginFragment"
-        android:label="Sign In or Register"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/programmesFragment"
-        android:name="com.example.uniapp.ProgrammesFragment"
-        android:label="List of Programmes"
-        tools:layout="@layout/fragment_item_list" />
 </navigation>

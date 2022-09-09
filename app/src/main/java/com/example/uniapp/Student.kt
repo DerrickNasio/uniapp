@@ -1,12 +1,11 @@
 package com.example.uniapp
 
 data class Student(
-    val surname: String,
-    val otherNames: String,
-    val gender: String,
-    val dateOfBirth: String,
-    val emailAddress: String,
-    val phoneNumber: String,
-    val identityNumber: String,
-    val country: String
-)
+    var surname: String,
+    var otherNames: String,
+    var gender: String,
+    var dateOfBirth: String,
+    var emailAddress: String,
+    var phoneNumber: String,
+    var identityNumber: String,
+    var country: String)
